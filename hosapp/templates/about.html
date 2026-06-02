@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %} About - City Hospital {% endblock %}
+
+{% block content %}
+<div class="bg-primary text-white py-5 mb-5 text-center">
+    <div class="container">
+        <h1 class="display-3">Your Health, Our Priority</h1>
+        <p class="lead">Serving the community with excellence and empathy for over 30 years.</p>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h2 class="mb-4">Our Legacy & History</h2>
+            <p>Founded in 1995, **City Hospital** began as a small clinic with just four doctors. Today, we have grown into a multi-specialty healthcare hub with over 500 beds and a team of world-renowned specialists.</p>
+            <p>We believe that healthcare should be accessible, affordable, and high-quality. Our facility is equipped with the latest diagnostic tools and surgical technology to provide comprehensive care under one roof.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="p-3 border rounded bg-light">
+                        <h3 class="text-primary">30k+</h3>
+                        <p class="mb-0">Patients Yearly</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border rounded bg-light">
+                        <h3 class="text-primary">150+</h3>
+                        <p class="mb-0">Expert Doctors</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border rounded bg-light">
+                        <h3 class="text-primary">24/7</h3>
+                        <p class="mb-0">Emergency Care</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border rounded bg-light">
+                        <h3 class="text-primary">15+</h3>
+                        <p class="mb-0">Specialized Depts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12 text-center mb-4">
+            <h2>Specialized Care Centers</h2>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-info"><i class="bi bi-heart-pulse"></i> Cardiology</h5>
+                    <p class="card-text small text-muted">Advanced heart care including non-invasive diagnostics and interventional procedures.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-info"><i class="bi bi-person-walking"></i> Orthopedics</h5>
+                    <p class="card-text small text-muted">Specializing in joint replacements, sports injuries, and spinal care.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title text-info"><i class="bi bi-motherboard"></i> Neurology</h5>
+                    <p class="card-text small text-muted">Treatment for complex brain, spine, and nerve disorders using modern tech.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light p-5 rounded text-center border">
+        <h3>Ready to consult with our experts?</h3>
+        <p class="mb-4">Book your appointment online and skip the waiting line.</p>
+        <a href="{% url 'booking' %}" class="btn btn-primary btn-lg px-5">Book an Appointment</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-secondary btn-lg px-5 ml-2">Contact Us</a>
+    </div>
+</div>
+{% endblock %}
